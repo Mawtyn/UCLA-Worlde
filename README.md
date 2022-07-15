@@ -1,6 +1,6 @@
 # Wordle - UCLA Edition
 
-Run the following commands in the directory in which you want to store the game:
+Run the following commands:
 
 ```
 node server.js
