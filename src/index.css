@@ -1,0 +1,106 @@
+body {
+  margin: 20px;
+}
+
+h1 { 
+  font-family: Bodoni MT, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif; 
+  font-size: 30px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px; 
+} 
+  
+h3 { 
+  font-family: Bodoni MT, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif; 
+  font-size: 14px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 15.4px; 
+} 
+
+button {
+  margin: 2px;
+}
+
+div {
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  justify-content: center;
+}
+
+.board {
+  margin:auto;
+  justify-content: center;
+  width: 550px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+
+.button-panel {
+  margin-top: 10px;
+}
+
+.square {
+  background: #ececec;
+  border: 2px solid rgb(185, 181, 181);
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  margin-right: 5px;
+  margin-top: -1px;
+  padding: 0;
+  width: 100px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.userForm {
+  padding-top: 20px;
+}
+
+:focus {
+  outline: none !important;
+}
+
+.modal-body {
+  padding: 20px;
+  text-align: left;
+}
+
+#overlay {
+  position: fixed;  
+  opacity: 0;
+  transition: 200ms ease-in-out; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+} 
